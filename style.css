@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+
+.frontPage{ background-image:url("https://media.giphy.com/media/5t29Sii98PFIwzoKAG/giphy.gif"); background-size: cover;
+}
+
+.noBackground{
+    color: black;
+}
+
+h2{
+    color: white;
+}
+
+.colorBox{
+    background-color: black;
+    height: 25px;
+    width: 300px;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+}
+
+.hide{
+    float: right;
+    color: white;
+    display: flex;
+}
+
+.show{
+    color:white;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Imj{
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png");
+    background-size: cover;
+    /*background-size: 100% 100%;*/
+    background-position: left;
+    min-height: 150px;
+    max-width: 250px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: 8px;
+}
+
+
+nav{
+    position: relative;
+    margin: 0;
+    padding-top: 0px;
+}
+
+@media screen and (max-width: 800px){
+
+    .menu{
+        position: fixed;
+        top: 60px;
+        right: -150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        background-color: darkred;
+        min-height: 150px;
+        transition: 0.125s;
+    }
+
+    .bar{
+        height: 6px;
+        width: 80%;
+        background-color: white;
+    }
+
+    .menuIcon{
+        height: 100%;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .show{
+        display: none;
+    }
+
+}
